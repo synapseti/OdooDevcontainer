@@ -1,0 +1,17 @@
+services:
+  odoo:
+    image: ghrc.io/oca/oca-ci/py3.10-odoo18.0:latest
+    depends_on:
+      - postgres
+    environment:
+      - PGHOST=postgres
+      - PGUSER=odoo
+      - PGPASSWORD=odoo
+      - PGDATABASE=odoo
+ 
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=odoo
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo

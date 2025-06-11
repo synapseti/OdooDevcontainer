@@ -1,0 +1,9 @@
+services:
+  odoo:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      - .:/opt/luxerage:cached
+      - ./.devcontainer/config:/opt/config
+    command: /bin/bash -c "while sleep 1000; do :; done"
