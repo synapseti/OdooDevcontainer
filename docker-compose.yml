@@ -12,6 +12,6 @@ services:
   postgres:
     image: postgres:15
     environment:
-      - POSTGRES_DB=odoo
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
