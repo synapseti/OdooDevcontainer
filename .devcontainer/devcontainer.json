@@ -1,8 +1,8 @@
 {
-    "name": "Luxerage Dev Environment",
+    "name": "Odoo Dev Environment",
     "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
     "service": "odoo",
-    "workspaceFolder": "/opt/luxerage",
+    "workspaceFolder": "/opt/custom", // Set where you want to mount your local project folder
     "customizations": {
         "vscode": {
             "extensions": [

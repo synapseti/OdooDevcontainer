@@ -1,0 +1,6 @@
+{
+    "remote.localPortHost": "allInterfaces",
+    "python.languageServer": "None",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.defaultInterpreterPath": "/opt/odoo-venv/bin/python3",
+}

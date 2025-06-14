@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start Odoo",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "/opt/odoo-venv/bin/python",
+            "program": "/opt/odoo/odoo-bin",
+            "args": [
+                "-c",
+                "/opt/config/odoo.conf",
+                "-d",
+                "odoo",
+                "--dev=all"
+            ],
+        }
+    ]
+}
